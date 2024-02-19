@@ -15,6 +15,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.border-blur {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Ajuste o valor alpha (0.5) conforme necessário para a intensidade da sombra */
+}
 
 body {
   color: rgb(var(--foreground-rgb));
