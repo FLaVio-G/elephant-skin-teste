@@ -1,10 +1,10 @@
 "use client";
-import { MoveRight } from "lucide-react";
+import { EyeOff, MoveRight } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 
-export default function Home() {
+export default function Registro() {
   return (
     <div className="relative bg-blue-300 mx-auto w-full h-screen">
       <Image
@@ -30,9 +30,11 @@ export default function Home() {
             </h2>
             <p className="pt-8">JOIN A GUEST</p>
             <div className="w-16  relative overflow-hidden">
-              <div className=" h-0.5  w-full bg-gradient-to-r from-white via-white to-transparent"></div>
+              <div className=" h-0.5 w-full bg-gradient-to-r from-white via-white to-transparent"></div>
             </div>
-            <p className=" pt-6"> lET ME IN </p>
+            <button className="bg-transparent border border-white shadow-inner md:shadow-sm bg-opacity-25 backdrop-blur-3xl mt-8 flex w-28 justify-center rounded-3xl text-white font-normal p-2">
+              LET ME IN
+            </button>
           </div>
 
           <div className="pt-6">
@@ -44,17 +46,27 @@ export default function Home() {
                 className="w-full pl-2 ml-2 border bg-black h-12  mb-4 text-white rounded-3xl bg-transparent shadow-2xl placeholder-white"
                 placeholder="Type your email"
               />
-              <input
-                type="password"
-                className="w-full ml-2 pl-4 border bg-black h-12  mb-4 text-white rounded-3xl bg-transparent shadow-2xl placeholder-white"
-                placeholder="Type your password"
-              />
+              <div className="relative flex items-center">
+                <input
+                  type="password"
+                  className="w-full pl-4 pr-12 border bg-black h-12 mb-4 text-white rounded-3xl bg-transparent shadow-2xl placeholder-white"
+                  placeholder="Type your password"
+                />
+                <div className="absolute inset-y-0  right-0 pr-4 flex items-center cursor-pointer">
+                  <div className="w-6 h-6">
+                    <EyeOff />
+                  </div>
+                </div>
+              </div>
 
               <div className="flex flex-col justify-center items-center">
-                <button className="bg-white mt-8 flex w-full justify-center  rounded-3xl text-black font-normal p-2 ">
-                  LOGIN
-                  <MoveRight className="ml-4" />
-                </button>
+                <Link className="w-full" href="/inicio">
+                  <button className="bg-white mt-8 flex w-full justify-center hover:bg-yellow-500 rounded-3xl text-black font-normal p-2">
+                    LOGIN
+                    <MoveRight className="ml-4" />
+                  </button>
+                </Link>
+
                 <p className="mt-6">
                   {" "}
                   Dont have an account?{" "}

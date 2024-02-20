@@ -18,8 +18,8 @@ export default function Home() {
         objectFit="cover"
         alt="Imagem de fundo"
       />
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="flex flex-col items-center">
+      <div className="absolute inset-0 flex justify-center items-center justify-">
+        <div className="flex flex-col justify-cente items-center">
           <div>
             <Image
               src="/image340.svg"
@@ -36,7 +36,7 @@ export default function Home() {
             START EXPERIENCE
           </div>
           <div className="mt-4">
-            <Link href="/register">
+            <Link href="/registro">
               <div className="rounded-full bg-black bg-opacity-25 p-4 border-white transition-all duration-300 ease-in-out hover:scale-105">
                 <MoveRight className="text-white" />
               </div>
