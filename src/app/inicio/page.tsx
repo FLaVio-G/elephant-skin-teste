@@ -139,7 +139,7 @@ export default function Inicio() {
                     View the building and availability
                   </h4>
                   <Link className="w-full" href="/inicio">
-                    <button className="bg-white mt-8 flex  justify-center hover:bg-yellow-500 rounded-3xl text-black font-normal p-2">
+                    <button className="bg-white w-[30%] p-2 flex items-center  justify-center hover:bg-yellow-500 rounded-full text-black font-normal text-xs ">
                       LET ME IN
                       <MoveRight className="ml-4" />
                     </button>
@@ -149,27 +149,15 @@ export default function Inicio() {
 
               <div className=" h-[100%] w-[70%] flex justify-cente">
                 <div ref={ref} className="keen-slider">
-                  <div className="keen-slider__slide relative rounded-2xl bg-blue-300 number-slide1">
+                  <div className="keen-slider__slide relative rounded-2xl number-slide1 flex flex-col justify-end items-center">
                     <Image
                       src="/images/predioLarge.jpg"
                       fill
                       alt="Imagem de fundo"
                       className="w-full h-full rounded-2xl"
                     />
-                    <div className="flex ">
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-sky-400/100">
-                        BULDING
-                      </div>
-                      <Image
-                        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                        src="/help360.svg"
-                        alt="Help Icon"
-                        width={24}
-                        height={24}
-                      />
-                    </div>
                   </div>
-                  <div className="keen-slider__slide number-slide2">
+                  <div className="keen-slider__slide  rounded-2xl number-slide2">
                     {" "}
                     <Image
                       src="/images/tourVirtual.png"
@@ -177,7 +165,7 @@ export default function Inicio() {
                       alt="Imagem de fundo"
                     />
                   </div>
-                  <div className="keen-slider__slide number-slide2">
+                  <div className="keen-slider__slide  rounded-2xl number-slide2">
                     {" "}
                     <Image
                       src="/images/ammenties.png"
@@ -185,7 +173,7 @@ export default function Inicio() {
                       alt="Imagem de fundo"
                     />
                   </div>
-                  <div className="keen-slider__slide number-slide2">
+                  <div className="keen-slider__slide  rounded-2xl number-slide2">
                     {" "}
                     <Image
                       src="/images/soundrange.png"
@@ -193,7 +181,7 @@ export default function Inicio() {
                       alt="Imagem de fundo"
                     />
                   </div>
-                  <div className="keen-slider__slide number-slide2">
+                  <div className="keen-slider__slide  rounded-2xl number-slide2">
                     {" "}
                     <Image
                       src="/images/gallery.png"
@@ -201,7 +189,7 @@ export default function Inicio() {
                       alt="Imagem de fundo"
                     />
                   </div>
-                  <div className="keen-slider__slide number-slide2">
+                  <div className="keen-slider__slide  rounded-2xl number-slide2">
                     {" "}
                     <Image src="/images/video.png" fill alt="Imagem de fundo" />
                   </div>
