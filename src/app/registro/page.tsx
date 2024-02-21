@@ -49,10 +49,10 @@ export default function Registro() {
               <div className="relative flex items-center">
                 <input
                   type="password"
-                  className="w-full pl-4 pr-12 border bg-black h-12 mb-4 text-white rounded-3xl bg-transparent shadow-2xl placeholder-white"
+                  className="w-full pl-2 ml-2 border bg-black h-12 mb-4 text-white rounded-3xl bg-transparent shadow-2xl placeholder-white"
                   placeholder="Type your password"
                 />
-                <div className="absolute inset-y-0  right-0 pr-4 flex items-center cursor-pointer">
+                <div className="absolute inset-y-0 right-0 pr-4 pb-2 flex items-center cursor-pointer">
                   <div className="w-6 h-6">
                     <EyeOff />
                   </div>
